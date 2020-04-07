@@ -1,49 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2020/04/04/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+    <title>致自己</title>
+    <url>/2020/04/04/toMyself/</url>
+    <content><![CDATA[<h4 id="我想改变，再也不想看到自己怨妇的样子，为什么我的人生要一直因为你们头疼呢，最初的梦想一丝也不曾剩下吗？"><a href="#我想改变，再也不想看到自己怨妇的样子，为什么我的人生要一直因为你们头疼呢，最初的梦想一丝也不曾剩下吗？" class="headerlink" title="我想改变，再也不想看到自己怨妇的样子，为什么我的人生要一直因为你们头疼呢，最初的梦想一丝也不曾剩下吗？"></a>我想改变，再也不想看到自己怨妇的样子，为什么我的人生要一直因为你们头疼呢，最初的梦想一丝也不曾剩下吗？</h4><h4 id="我想进步，我这一辈子，不能跟别的人一样，只围着家庭转，我要有我的事业，我要自由，我要不妥协，对于改变不了的事，只是笑笑吧。"><a href="#我想进步，我这一辈子，不能跟别的人一样，只围着家庭转，我要有我的事业，我要自由，我要不妥协，对于改变不了的事，只是笑笑吧。" class="headerlink" title="我想进步，我这一辈子，不能跟别的人一样，只围着家庭转，我要有我的事业，我要自由，我要不妥协，对于改变不了的事，只是笑笑吧。"></a>我想进步，我这一辈子，不能跟别的人一样，只围着家庭转，我要有我的事业，我要自由，我要不妥协，对于改变不了的事，只是笑笑吧。</h4><h4 id="我想积累，积累智慧，积累阅历，积累财富，靠自己的双手，我不怕成功的太晚，甚至不成功，只要还有坚持下去的动力。"><a href="#我想积累，积累智慧，积累阅历，积累财富，靠自己的双手，我不怕成功的太晚，甚至不成功，只要还有坚持下去的动力。" class="headerlink" title="我想积累，积累智慧，积累阅历，积累财富，靠自己的双手，我不怕成功的太晚，甚至不成功，只要还有坚持下去的动力。"></a>我想积累，积累智慧，积累阅历，积累财富，靠自己的双手，我不怕成功的太晚，甚至不成功，只要还有坚持下去的动力。</h4><h4 id="愚蠢的人在有些事面前只会抱怨，而聪明的人会想出解决办法，办法总会有，有的快，有的慢，有的长，有的久，所以这里面更多的是忍，是等，是在这个过程中让自己坚强，壮大，人生从此刻开始，不允许我再小孩，再逃避，再原谅自己，再懒惰。"><a href="#愚蠢的人在有些事面前只会抱怨，而聪明的人会想出解决办法，办法总会有，有的快，有的慢，有的长，有的久，所以这里面更多的是忍，是等，是在这个过程中让自己坚强，壮大，人生从此刻开始，不允许我再小孩，再逃避，再原谅自己，再懒惰。" class="headerlink" title="愚蠢的人在有些事面前只会抱怨，而聪明的人会想出解决办法，办法总会有，有的快，有的慢，有的长，有的久，所以这里面更多的是忍，是等，是在这个过程中让自己坚强，壮大，人生从此刻开始，不允许我再小孩，再逃避，再原谅自己，再懒惰。"></a>愚蠢的人在有些事面前只会抱怨，而聪明的人会想出解决办法，办法总会有，有的快，有的慢，有的长，有的久，所以这里面更多的是忍，是等，是在这个过程中让自己坚强，壮大，人生从此刻开始，不允许我再小孩，再逃避，再原谅自己，再懒惰。</h4><h4 id="我会站在自己热爱的世界里，成为我自己希望的那样的人……"><a href="#我会站在自己热爱的世界里，成为我自己希望的那样的人……" class="headerlink" title="我会站在自己热爱的世界里，成为我自己希望的那样的人……"></a>我会站在自己热爱的世界里，成为我自己希望的那样的人……</h4>]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>toMyself</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vue-element-table-滚动加载</title>
+    <url>/2020/04/07/vue-element-table-%E6%BB%9A%E5%8A%A8%E5%8A%A0%E8%BD%BD/</url>
+    <content><![CDATA[<p>首先在main.js文件注册全局事件，代码如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Vue.directive(<span class="string">'loadmore'</span>, &#123;</span><br><span class="line">  <span class="built_in">bind</span>(el, binding) &#123;</span><br><span class="line">    var p = 0;</span><br><span class="line">    var t = 0;</span><br><span class="line">    var down = <span class="literal">true</span>;</span><br><span class="line">    var selectWrap = el.querySelector(<span class="string">'.el-table__body-wrapper'</span>)</span><br><span class="line">    selectWrap.addEventListener(<span class="string">'scroll'</span>, <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">      //判断是否向下滚动</span><br><span class="line">      p = this.scrollTop;</span><br><span class="line">      // <span class="keyword">if</span> ( t &lt; p)&#123;down=<span class="literal">true</span>&#125;<span class="keyword">else</span>&#123;down=<span class="literal">false</span>&#125;</span><br><span class="line">      <span class="keyword">if</span>(t &lt; p)&#123;</span><br><span class="line">        down = <span class="literal">true</span>;</span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        down = <span class="literal">false</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      t = p;</span><br><span class="line">      //判断是否到底</span><br><span class="line">      const sign = 10;</span><br><span class="line">      const scrollDistance = this.scrollHeight - this.scrollTop - this.clientHeight</span><br><span class="line">      <span class="keyword">if</span> (scrollDistance &lt;= sign &amp;&amp; down) &#123;</span><br><span class="line">        binding.value()</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>在组件中，使用自定义的事件：<br>v-loadmore=”loadMore”<br>在methods中调用loadMore<br>这样就实现啦！！！</p>
 ]]></content>
       <categories>
         <category>工作</category>
       </categories>
       <tags>
-        <tag>技术</tag>
+        <tag>vue</tag>
+        <tag>element</tag>
+        <tag>table</tag>
       </tags>
   </entry>
   <entry>
-    <title>致自己</title>
-    <url>/2020/04/04/frist/</url>
-    <content><![CDATA[<h4 id="我想改变，再也不想看到自己怨妇的样子，为什么我的人生要一直因为你们头疼呢，最初的梦想一丝也不曾剩下吗？"><a href="#我想改变，再也不想看到自己怨妇的样子，为什么我的人生要一直因为你们头疼呢，最初的梦想一丝也不曾剩下吗？" class="headerlink" title="我想改变，再也不想看到自己怨妇的样子，为什么我的人生要一直因为你们头疼呢，最初的梦想一丝也不曾剩下吗？"></a>我想改变，再也不想看到自己怨妇的样子，为什么我的人生要一直因为你们头疼呢，最初的梦想一丝也不曾剩下吗？</h4><h4 id="我想进步，我这一辈子，不能跟别的人一样，只围着家庭转，我要有我的事业，我要自由，我要不妥协，对于改变不了的事，只是笑笑吧。"><a href="#我想进步，我这一辈子，不能跟别的人一样，只围着家庭转，我要有我的事业，我要自由，我要不妥协，对于改变不了的事，只是笑笑吧。" class="headerlink" title="我想进步，我这一辈子，不能跟别的人一样，只围着家庭转，我要有我的事业，我要自由，我要不妥协，对于改变不了的事，只是笑笑吧。"></a>我想进步，我这一辈子，不能跟别的人一样，只围着家庭转，我要有我的事业，我要自由，我要不妥协，对于改变不了的事，只是笑笑吧。</h4><h4 id="我想积累，积累智慧，积累阅历，积累财富，靠自己的双手，我不怕成功的太晚，甚至不成功，只要还有坚持下去的动力。"><a href="#我想积累，积累智慧，积累阅历，积累财富，靠自己的双手，我不怕成功的太晚，甚至不成功，只要还有坚持下去的动力。" class="headerlink" title="我想积累，积累智慧，积累阅历，积累财富，靠自己的双手，我不怕成功的太晚，甚至不成功，只要还有坚持下去的动力。"></a>我想积累，积累智慧，积累阅历，积累财富，靠自己的双手，我不怕成功的太晚，甚至不成功，只要还有坚持下去的动力。</h4><h4 id="愚蠢的人在有些事面前只会抱怨，而聪明的人会想出解决办法，办法总会有，有的快，有的慢，有的长，有的久，所以这里面更多的是忍，是等，是在这个过程中让自己坚强，壮大，人生从此刻开始，不允许我再小孩，再逃避，再原谅自己，再懒惰。"><a href="#愚蠢的人在有些事面前只会抱怨，而聪明的人会想出解决办法，办法总会有，有的快，有的慢，有的长，有的久，所以这里面更多的是忍，是等，是在这个过程中让自己坚强，壮大，人生从此刻开始，不允许我再小孩，再逃避，再原谅自己，再懒惰。" class="headerlink" title="愚蠢的人在有些事面前只会抱怨，而聪明的人会想出解决办法，办法总会有，有的快，有的慢，有的长，有的久，所以这里面更多的是忍，是等，是在这个过程中让自己坚强，壮大，人生从此刻开始，不允许我再小孩，再逃避，再原谅自己，再懒惰。"></a>愚蠢的人在有些事面前只会抱怨，而聪明的人会想出解决办法，办法总会有，有的快，有的慢，有的长，有的久，所以这里面更多的是忍，是等，是在这个过程中让自己坚强，壮大，人生从此刻开始，不允许我再小孩，再逃避，再原谅自己，再懒惰。</h4><h4 id="我会站在自己热爱的世界里，成为我自己希望的那样的人……"><a href="#我会站在自己热爱的世界里，成为我自己希望的那样的人……" class="headerlink" title="我会站在自己热爱的世界里，成为我自己希望的那样的人……"></a>我会站在自己热爱的世界里，成为我自己希望的那样的人……</h4>]]></content>
+    <title>sortable+element实现表格行拖拽</title>
+    <url>/2020/04/07/sortable-element%E5%AE%9E%E7%8E%B0%E8%A1%A8%E6%A0%BC%E8%A1%8C%E6%8B%96%E6%8B%BD/</url>
+    <content><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install vuedraggable</span><br></pre></td></tr></table></figure>
+<h3 id="引入"><a href="#引入" class="headerlink" title="引入"></a>引入</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import Sortable from <span class="string">'sortablejs'</span></span><br></pre></td></tr></table></figure>
+<h3 id="el-table-添加row-key属性"><a href="#el-table-添加row-key属性" class="headerlink" title="el-table 添加row-key属性"></a>el-table 添加row-key属性</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;el-table</span><br><span class="line">  ref=<span class="string">"filterTable"</span></span><br><span class="line">  row-key=<span class="string">"ip"</span> </span><br><span class="line">  @filter-change=<span class="string">"handlerFilterChange"</span> </span><br><span class="line">  class=<span class="string">"cl-table"</span> </span><br><span class="line">  :data=<span class="string">"resourceList"</span> </span><br><span class="line">  v-loading=<span class="string">"resourceListLoading"</span> </span><br><span class="line">  stripe</span><br><span class="line">  style=<span class="string">"width:100%;"</span>&gt;</span><br><span class="line">  &lt;el-table-column</span><br><span class="line">    prop=<span class="string">"name"</span></span><br><span class="line">    label=<span class="string">"主机名"</span> </span><br><span class="line">    :min-width=<span class="string">"150"</span> </span><br><span class="line">    show-overflow-tooltip&gt;</span><br><span class="line">  &lt;/el-table-column&gt;</span><br><span class="line">&lt;/el-table&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="将拖拽元素设置为要拖动项的父级元素"><a href="#将拖拽元素设置为要拖动项的父级元素" class="headerlink" title="将拖拽元素设置为要拖动项的父级元素"></a>将拖拽元素设置为要拖动项的父级元素</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">mounted</span></span>() &#123;</span><br><span class="line">  // 表格中需要实现行拖动，所以选中tr的父级元素</span><br><span class="line">  const table = document.querySelector(<span class="string">'.el-table__body-wrapper tbody'</span>)</span><br><span class="line">  const self = this</span><br><span class="line">  Sortable.create(table, &#123;</span><br><span class="line">    onEnd(&#123; newIndex, oldIndex &#125;) &#123;</span><br><span class="line">      console.log(newIndex, oldIndex)</span><br><span class="line">      const targetRow = self.resourceList.splice(oldIndex, 1)[0]</span><br><span class="line">      self.resourceList.splice(newIndex, 0, targetRow)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
-        <category>生活</category>
+        <category>工作</category>
       </categories>
       <tags>
-        <tag>目标</tag>
+        <tag>vue</tag>
+        <tag>element</tag>
+        <tag>sortable</tag>
+        <tag>表格拖拽</tag>
       </tags>
   </entry>
   <entry>
-    <title>致自己</title>
-    <url>/2020/04/04/frist%20copy/</url>
-    <content><![CDATA[<h4 id="我想改变，再也不想看到自己怨妇的样子，为什么我的人生要一直因为你们头疼呢，最初的梦想一丝也不曾剩下吗？"><a href="#我想改变，再也不想看到自己怨妇的样子，为什么我的人生要一直因为你们头疼呢，最初的梦想一丝也不曾剩下吗？" class="headerlink" title="我想改变，再也不想看到自己怨妇的样子，为什么我的人生要一直因为你们头疼呢，最初的梦想一丝也不曾剩下吗？"></a>我想改变，再也不想看到自己怨妇的样子，为什么我的人生要一直因为你们头疼呢，最初的梦想一丝也不曾剩下吗？</h4><h4 id="我想进步，我这一辈子，不能跟别的人一样，只围着家庭转，我要有我的事业，我要自由，我要不妥协，对于改变不了的事，只是笑笑吧。"><a href="#我想进步，我这一辈子，不能跟别的人一样，只围着家庭转，我要有我的事业，我要自由，我要不妥协，对于改变不了的事，只是笑笑吧。" class="headerlink" title="我想进步，我这一辈子，不能跟别的人一样，只围着家庭转，我要有我的事业，我要自由，我要不妥协，对于改变不了的事，只是笑笑吧。"></a>我想进步，我这一辈子，不能跟别的人一样，只围着家庭转，我要有我的事业，我要自由，我要不妥协，对于改变不了的事，只是笑笑吧。</h4><h4 id="我想积累，积累智慧，积累阅历，积累财富，靠自己的双手，我不怕成功的太晚，甚至不成功，只要还有坚持下去的动力。"><a href="#我想积累，积累智慧，积累阅历，积累财富，靠自己的双手，我不怕成功的太晚，甚至不成功，只要还有坚持下去的动力。" class="headerlink" title="我想积累，积累智慧，积累阅历，积累财富，靠自己的双手，我不怕成功的太晚，甚至不成功，只要还有坚持下去的动力。"></a>我想积累，积累智慧，积累阅历，积累财富，靠自己的双手，我不怕成功的太晚，甚至不成功，只要还有坚持下去的动力。</h4><h4 id="愚蠢的人在有些事面前只会抱怨，而聪明的人会想出解决办法，办法总会有，有的快，有的慢，有的长，有的久，所以这里面更多的是忍，是等，是在这个过程中让自己坚强，壮大，人生从此刻开始，不允许我再小孩，再逃避，再原谅自己，再懒惰。"><a href="#愚蠢的人在有些事面前只会抱怨，而聪明的人会想出解决办法，办法总会有，有的快，有的慢，有的长，有的久，所以这里面更多的是忍，是等，是在这个过程中让自己坚强，壮大，人生从此刻开始，不允许我再小孩，再逃避，再原谅自己，再懒惰。" class="headerlink" title="愚蠢的人在有些事面前只会抱怨，而聪明的人会想出解决办法，办法总会有，有的快，有的慢，有的长，有的久，所以这里面更多的是忍，是等，是在这个过程中让自己坚强，壮大，人生从此刻开始，不允许我再小孩，再逃避，再原谅自己，再懒惰。"></a>愚蠢的人在有些事面前只会抱怨，而聪明的人会想出解决办法，办法总会有，有的快，有的慢，有的长，有的久，所以这里面更多的是忍，是等，是在这个过程中让自己坚强，壮大，人生从此刻开始，不允许我再小孩，再逃避，再原谅自己，再懒惰。</h4><h4 id="我会站在自己热爱的世界里，成为我自己希望的那样的人……"><a href="#我会站在自己热爱的世界里，成为我自己希望的那样的人……" class="headerlink" title="我会站在自己热爱的世界里，成为我自己希望的那样的人……"></a>我会站在自己热爱的世界里，成为我自己希望的那样的人……</h4>]]></content>
+    <title>viewPort适配移动端</title>
+    <url>/2020/04/07/viewPort/</url>
+    <content><![CDATA[<h3 id="PostCSS-基本插件"><a href="#PostCSS-基本插件" class="headerlink" title="PostCSS 基本插件"></a>PostCSS 基本插件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">   <span class="string">"plugins"</span>: &#123;</span><br><span class="line">   <span class="string">"postcss-import"</span>: &#123;&#125;,</span><br><span class="line">        <span class="string">"postcss-url"</span>: &#123;&#125;,</span><br><span class="line">        // to edit target browsers: use <span class="string">"browserslist"</span> field <span class="keyword">in</span> package.json</span><br><span class="line">        <span class="string">"autoprefixer"</span>: &#123;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>vue-cli 脚手架已经默认安装了</p>
+<h3 id="PostCSS-其他插件"><a href="#PostCSS-其他插件" class="headerlink" title="PostCSS 其他插件"></a>PostCSS 其他插件</h3><p>安装其他插件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm i postcss-aspect-ratio-mini postcss-px-to-viewport postcss-write-svg postcss-cssnext postcss-viewport-units cssnano --S</span><br></pre></td></tr></table></figure>
+<p>安装成功之后会 package.json 会有显示</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="string">"dependencies"</span>: &#123;</span><br><span class="line">    <span class="string">"axios"</span>: <span class="string">"^0.18.0"</span>,</span><br><span class="line">    <span class="string">"cssnano"</span>: <span class="string">"^4.1.0"</span>,</span><br><span class="line">    <span class="string">"postcss-aspect-ratio-mini"</span>: <span class="string">"0.0.2"</span>,</span><br><span class="line">    <span class="string">"postcss-cssnext"</span>: <span class="string">"^3.1.0"</span>,</span><br><span class="line">    <span class="string">"postcss-px-to-viewport"</span>: <span class="string">"0.0.3"</span>,</span><br><span class="line">    <span class="string">"postcss-viewport-units"</span>: <span class="string">"^0.1.4"</span>,</span><br><span class="line">    <span class="string">"postcss-write-svg"</span>: <span class="string">"^3.0.1"</span>,</span><br><span class="line">    <span class="string">"vue"</span>: <span class="string">"^2.5.2"</span>,</span><br><span class="line">    <span class="string">"vue-router"</span>: <span class="string">"^3.0.1"</span>,</span><br><span class="line">    <span class="string">"vuex"</span>: <span class="string">"^3.0.1"</span> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="postcssrc-js-文件设置"><a href="#postcssrc-js-文件设置" class="headerlink" title=".postcssrc.js 文件设置"></a>.postcssrc.js 文件设置</h3><p>脚手架原有的三个配置项需要注释 autoprefixer ，理由是 cssnano 中已经具有此配置</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">    <span class="string">"plugins"</span>: &#123;</span><br><span class="line">        <span class="string">"postcss-import"</span>: &#123;&#125;,</span><br><span class="line">        <span class="string">"postcss-url"</span>: &#123;&#125;,</span><br><span class="line">        // to edit target browsers: use <span class="string">"browserslist"</span> field <span class="keyword">in</span> package.json</span><br><span class="line">        // <span class="string">"autoprefixer"</span>: &#123;&#125;, </span><br><span class="line">        <span class="string">"postcss-aspect-ratio-mini"</span>: &#123;&#125;,</span><br><span class="line">        <span class="string">"postcss-write-svg"</span>: &#123;</span><br><span class="line">            utf8: <span class="literal">false</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">"postcss-cssnext"</span>: &#123;&#125;,</span><br><span class="line">        <span class="string">"postcss-px-to-viewport"</span>: &#123;</span><br><span class="line">            viewportWidth: 750, // 视窗的宽度，对应的是我们设计稿的宽度，一般是750</span><br><span class="line">            // viewportHeight: 1334, // 视窗的高度，根据750设备的宽度来指定，一般指定1334，也可以不设置</span><br><span class="line">            unitPrecision: 3, // 指定`px`转换为视窗单位值的小数位数（很多时候无法整除）</span><br><span class="line">            viewportUnit: <span class="string">'vw'</span>, // 指定需要转换成的视窗单位，建议使用vw</span><br><span class="line">            selectorBlackList: [<span class="string">'.ignore'</span>, <span class="string">'.hairlines'</span>], // 指定不转换为视窗单位的类，可以自定义， 可以无限添加,建议定义一至两个通用的类名 </span><br><span class="line">            minPixelValue: 1, // 小于或等于`1px`不转换为视窗单位，你也可以设置为你想要的值</span><br><span class="line">            mediaQuery: <span class="literal">false</span> // 允许在媒体查询中转换`px`</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">"postcss-viewport-units"</span>: &#123;&#125;,</span><br><span class="line">        <span class="string">"cssnano"</span>: &#123;</span><br><span class="line">            preset: <span class="string">"advanced"</span>,</span><br><span class="line">            autoprefixer: <span class="literal">false</span>,</span><br><span class="line">            <span class="string">"postcss-zindex"</span>: <span class="literal">false</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="cssnano-插件安装"><a href="#cssnano-插件安装" class="headerlink" title="cssnano 插件安装"></a>cssnano 插件安装</h3><p>在配置中我们使用了 preset: “advanced” ，所以还需要安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm i cssnano-preset-advanced --save-dev</span><br></pre></td></tr></table></figure>
+<p>基本设置</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="string">"cssnano"</span>: &#123;</span><br><span class="line">    preset: <span class="string">"advanced"</span>,</span><br><span class="line">    autoprefixer: <span class="literal">false</span>,</span><br><span class="line">    <span class="string">"postcss-zindex"</span>: <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="postcss-px-to-viewport"><a href="#postcss-px-to-viewport" class="headerlink" title="postcss-px-to-viewport"></a>postcss-px-to-viewport</h3><p>这是核心的插件，帮助我们将 px 转成 vw、vh、vmin、vmax<br>目前出视觉设计稿，都是使用 750px，那么 100vw = 750px，即 1vw = 7.5px。那么我们根据设计图上 的px 值直接转换成对于的 vw 值。实际撸码过程中，不需要做任何计算，直接在代码中写 px 即可</p>
+]]></content>
       <categories>
-        <category>生活</category>
+        <category>工作</category>
       </categories>
       <tags>
-        <tag>心愿</tag>
+        <tag>vue</tag>
+        <tag>移动端</tag>
       </tags>
   </entry>
 </search>

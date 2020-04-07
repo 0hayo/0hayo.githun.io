@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>viewPort适配移动端 - 0hayo</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="PostCSS 基本插件12345678module.exports = &amp;#123;   &#34;plugins&#34;: &amp;#123;   &#34;postcss-import&#34;: &amp;#123;&amp;#125;,  ,"> 
+    <meta name="author" content="0hayo"> 
+    <link rel="alternative" href="atom.xml" title="0hayo" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">0hayo</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">viewPort适配移动端</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">viewPort适配移动端</h1>
+        <div class="stuff">
+            <span>四月 07, 2020</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/vue/" rel="tag">vue</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="tag">移动端</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h3 id="PostCSS-基本插件"><a href="#PostCSS-基本插件" class="headerlink" title="PostCSS 基本插件"></a>PostCSS 基本插件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">   <span class="string">"plugins"</span>: &#123;</span><br><span class="line">   <span class="string">"postcss-import"</span>: &#123;&#125;,</span><br><span class="line">        <span class="string">"postcss-url"</span>: &#123;&#125;,</span><br><span class="line">        // to edit target browsers: use <span class="string">"browserslist"</span> field <span class="keyword">in</span> package.json</span><br><span class="line">        <span class="string">"autoprefixer"</span>: &#123;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>vue-cli 脚手架已经默认安装了</p>
+<h3 id="PostCSS-其他插件"><a href="#PostCSS-其他插件" class="headerlink" title="PostCSS 其他插件"></a>PostCSS 其他插件</h3><p>安装其他插件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i postcss-aspect-ratio-mini postcss-px-to-viewport postcss-write-svg postcss-cssnext postcss-viewport-units cssnano --S</span><br></pre></td></tr></table></figure>
+<p>安装成功之后会 package.json 会有显示</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"dependencies"</span>: &#123;</span><br><span class="line">    <span class="string">"axios"</span>: <span class="string">"^0.18.0"</span>,</span><br><span class="line">    <span class="string">"cssnano"</span>: <span class="string">"^4.1.0"</span>,</span><br><span class="line">    <span class="string">"postcss-aspect-ratio-mini"</span>: <span class="string">"0.0.2"</span>,</span><br><span class="line">    <span class="string">"postcss-cssnext"</span>: <span class="string">"^3.1.0"</span>,</span><br><span class="line">    <span class="string">"postcss-px-to-viewport"</span>: <span class="string">"0.0.3"</span>,</span><br><span class="line">    <span class="string">"postcss-viewport-units"</span>: <span class="string">"^0.1.4"</span>,</span><br><span class="line">    <span class="string">"postcss-write-svg"</span>: <span class="string">"^3.0.1"</span>,</span><br><span class="line">    <span class="string">"vue"</span>: <span class="string">"^2.5.2"</span>,</span><br><span class="line">    <span class="string">"vue-router"</span>: <span class="string">"^3.0.1"</span>,</span><br><span class="line">    <span class="string">"vuex"</span>: <span class="string">"^3.0.1"</span> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="postcssrc-js-文件设置"><a href="#postcssrc-js-文件设置" class="headerlink" title=".postcssrc.js 文件设置"></a>.postcssrc.js 文件设置</h3><p>脚手架原有的三个配置项需要注释 autoprefixer ，理由是 cssnano 中已经具有此配置</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">    <span class="string">"plugins"</span>: &#123;</span><br><span class="line">        <span class="string">"postcss-import"</span>: &#123;&#125;,</span><br><span class="line">        <span class="string">"postcss-url"</span>: &#123;&#125;,</span><br><span class="line">        // to edit target browsers: use <span class="string">"browserslist"</span> field <span class="keyword">in</span> package.json</span><br><span class="line">        // <span class="string">"autoprefixer"</span>: &#123;&#125;, </span><br><span class="line">        <span class="string">"postcss-aspect-ratio-mini"</span>: &#123;&#125;,</span><br><span class="line">        <span class="string">"postcss-write-svg"</span>: &#123;</span><br><span class="line">            utf8: <span class="literal">false</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">"postcss-cssnext"</span>: &#123;&#125;,</span><br><span class="line">        <span class="string">"postcss-px-to-viewport"</span>: &#123;</span><br><span class="line">            viewportWidth: 750, // 视窗的宽度，对应的是我们设计稿的宽度，一般是750</span><br><span class="line">            // viewportHeight: 1334, // 视窗的高度，根据750设备的宽度来指定，一般指定1334，也可以不设置</span><br><span class="line">            unitPrecision: 3, // 指定`px`转换为视窗单位值的小数位数（很多时候无法整除）</span><br><span class="line">            viewportUnit: <span class="string">'vw'</span>, // 指定需要转换成的视窗单位，建议使用vw</span><br><span class="line">            selectorBlackList: [<span class="string">'.ignore'</span>, <span class="string">'.hairlines'</span>], // 指定不转换为视窗单位的类，可以自定义， 可以无限添加,建议定义一至两个通用的类名 </span><br><span class="line">            minPixelValue: 1, // 小于或等于`1px`不转换为视窗单位，你也可以设置为你想要的值</span><br><span class="line">            mediaQuery: <span class="literal">false</span> // 允许在媒体查询中转换`px`</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">"postcss-viewport-units"</span>: &#123;&#125;,</span><br><span class="line">        <span class="string">"cssnano"</span>: &#123;</span><br><span class="line">            preset: <span class="string">"advanced"</span>,</span><br><span class="line">            autoprefixer: <span class="literal">false</span>,</span><br><span class="line">            <span class="string">"postcss-zindex"</span>: <span class="literal">false</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="cssnano-插件安装"><a href="#cssnano-插件安装" class="headerlink" title="cssnano 插件安装"></a>cssnano 插件安装</h3><p>在配置中我们使用了 preset: “advanced” ，所以还需要安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i cssnano-preset-advanced --save-dev</span><br></pre></td></tr></table></figure>
+<p>基本设置</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"cssnano"</span>: &#123;</span><br><span class="line">    preset: <span class="string">"advanced"</span>,</span><br><span class="line">    autoprefixer: <span class="literal">false</span>,</span><br><span class="line">    <span class="string">"postcss-zindex"</span>: <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="postcss-px-to-viewport"><a href="#postcss-px-to-viewport" class="headerlink" title="postcss-px-to-viewport"></a>postcss-px-to-viewport</h3><p>这是核心的插件，帮助我们将 px 转成 vw、vh、vmin、vmax<br>目前出视觉设计稿，都是使用 750px，那么 100vw = 750px，即 1vw = 7.5px。那么我们根据设计图上 的px 值直接转换成对于的 vw 值。实际撸码过程中，不需要做任何计算，直接在代码中写 px 即可</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+		data-enable='true'
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+        <div class='side'>
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#PostCSS-基本插件"><span class="toc-number">1.</span> <span class="toc-text">PostCSS 基本插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#PostCSS-其他插件"><span class="toc-number">2.</span> <span class="toc-text">PostCSS 其他插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#postcssrc-js-文件设置"><span class="toc-number">3.</span> <span class="toc-text">.postcssrc.js 文件设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cssnano-插件安装"><span class="toc-number">4.</span> <span class="toc-text">cssnano 插件安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#postcss-px-to-viewport"><span class="toc-number">5.</span> <span class="toc-text">postcss-px-to-viewport</span></a></li></ol>	
+        </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
