@@ -12,40 +12,6 @@
       </tags>
   </entry>
   <entry>
-    <title>vue-element-table-滚动加载</title>
-    <url>/2020/04/07/vue-element-table-%E6%BB%9A%E5%8A%A8%E5%8A%A0%E8%BD%BD/</url>
-    <content><![CDATA[<p>首先在main.js文件注册全局事件，代码如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Vue.directive(<span class="string">'loadmore'</span>, &#123;</span><br><span class="line">  <span class="built_in">bind</span>(el, binding) &#123;</span><br><span class="line">    var p = 0;</span><br><span class="line">    var t = 0;</span><br><span class="line">    var down = <span class="literal">true</span>;</span><br><span class="line">    var selectWrap = el.querySelector(<span class="string">'.el-table__body-wrapper'</span>)</span><br><span class="line">    selectWrap.addEventListener(<span class="string">'scroll'</span>, <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">      //判断是否向下滚动</span><br><span class="line">      p = this.scrollTop;</span><br><span class="line">      // <span class="keyword">if</span> ( t &lt; p)&#123;down=<span class="literal">true</span>&#125;<span class="keyword">else</span>&#123;down=<span class="literal">false</span>&#125;</span><br><span class="line">      <span class="keyword">if</span>(t &lt; p)&#123;</span><br><span class="line">        down = <span class="literal">true</span>;</span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        down = <span class="literal">false</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      t = p;</span><br><span class="line">      //判断是否到底</span><br><span class="line">      const sign = 10;</span><br><span class="line">      const scrollDistance = this.scrollHeight - this.scrollTop - this.clientHeight</span><br><span class="line">      <span class="keyword">if</span> (scrollDistance &lt;= sign &amp;&amp; down) &#123;</span><br><span class="line">        binding.value()</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<p>在组件中，使用自定义的事件：<br>v-loadmore=”loadMore”<br>在methods中调用loadMore<br>这样就实现啦！！！</p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>vue</tag>
-        <tag>element</tag>
-        <tag>table</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>sortable+element实现表格行拖拽</title>
-    <url>/2020/04/07/sortable-element%E5%AE%9E%E7%8E%B0%E8%A1%A8%E6%A0%BC%E8%A1%8C%E6%8B%96%E6%8B%BD/</url>
-    <content><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install vuedraggable</span><br></pre></td></tr></table></figure>
-<h3 id="引入"><a href="#引入" class="headerlink" title="引入"></a>引入</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import Sortable from <span class="string">'sortablejs'</span></span><br></pre></td></tr></table></figure>
-<h3 id="el-table-添加row-key属性"><a href="#el-table-添加row-key属性" class="headerlink" title="el-table 添加row-key属性"></a>el-table 添加row-key属性</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;el-table</span><br><span class="line">  ref=<span class="string">"filterTable"</span></span><br><span class="line">  row-key=<span class="string">"ip"</span> </span><br><span class="line">  @filter-change=<span class="string">"handlerFilterChange"</span> </span><br><span class="line">  class=<span class="string">"cl-table"</span> </span><br><span class="line">  :data=<span class="string">"resourceList"</span> </span><br><span class="line">  v-loading=<span class="string">"resourceListLoading"</span> </span><br><span class="line">  stripe</span><br><span class="line">  style=<span class="string">"width:100%;"</span>&gt;</span><br><span class="line">  &lt;el-table-column</span><br><span class="line">    prop=<span class="string">"name"</span></span><br><span class="line">    label=<span class="string">"主机名"</span> </span><br><span class="line">    :min-width=<span class="string">"150"</span> </span><br><span class="line">    show-overflow-tooltip&gt;</span><br><span class="line">  &lt;/el-table-column&gt;</span><br><span class="line">&lt;/el-table&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="将拖拽元素设置为要拖动项的父级元素"><a href="#将拖拽元素设置为要拖动项的父级元素" class="headerlink" title="将拖拽元素设置为要拖动项的父级元素"></a>将拖拽元素设置为要拖动项的父级元素</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">mounted</span></span>() &#123;</span><br><span class="line">  // 表格中需要实现行拖动，所以选中tr的父级元素</span><br><span class="line">  const table = document.querySelector(<span class="string">'.el-table__body-wrapper tbody'</span>)</span><br><span class="line">  const self = this</span><br><span class="line">  Sortable.create(table, &#123;</span><br><span class="line">    onEnd(&#123; newIndex, oldIndex &#125;) &#123;</span><br><span class="line">      console.log(newIndex, oldIndex)</span><br><span class="line">      const targetRow = self.resourceList.splice(oldIndex, 1)[0]</span><br><span class="line">      self.resourceList.splice(newIndex, 0, targetRow)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>vue</tag>
-        <tag>element</tag>
-        <tag>sortable</tag>
-        <tag>表格拖拽</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>viewPort适配移动端</title>
     <url>/2020/04/07/viewPort/</url>
     <content><![CDATA[<h3 id="PostCSS-基本插件"><a href="#PostCSS-基本插件" class="headerlink" title="PostCSS 基本插件"></a>PostCSS 基本插件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">   <span class="string">"plugins"</span>: &#123;</span><br><span class="line">   <span class="string">"postcss-import"</span>: &#123;&#125;,</span><br><span class="line">        <span class="string">"postcss-url"</span>: &#123;&#125;,</span><br><span class="line">        // to edit target browsers: use <span class="string">"browserslist"</span> field <span class="keyword">in</span> package.json</span><br><span class="line">        <span class="string">"autoprefixer"</span>: &#123;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -71,6 +37,40 @@
       <tags>
         <tag>vue</tag>
         <tag>移动端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vue-element-table-滚动加载</title>
+    <url>/2020/04/07/vue-element-table-%E6%BB%9A%E5%8A%A8%E5%8A%A0%E8%BD%BD/</url>
+    <content><![CDATA[<p>首先在main.js文件注册全局事件，代码如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Vue.directive(<span class="string">'loadmore'</span>, &#123;</span><br><span class="line">  <span class="built_in">bind</span>(el, binding) &#123;</span><br><span class="line">    var p = 0;</span><br><span class="line">    var t = 0;</span><br><span class="line">    var down = <span class="literal">true</span>;</span><br><span class="line">    var selectWrap = el.querySelector(<span class="string">'.el-table__body-wrapper'</span>)</span><br><span class="line">    selectWrap.addEventListener(<span class="string">'scroll'</span>, <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">      //判断是否向下滚动</span><br><span class="line">      p = this.scrollTop;</span><br><span class="line">      // <span class="keyword">if</span> ( t &lt; p)&#123;down=<span class="literal">true</span>&#125;<span class="keyword">else</span>&#123;down=<span class="literal">false</span>&#125;</span><br><span class="line">      <span class="keyword">if</span>(t &lt; p)&#123;</span><br><span class="line">        down = <span class="literal">true</span>;</span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        down = <span class="literal">false</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      t = p;</span><br><span class="line">      //判断是否到底</span><br><span class="line">      const sign = 10;</span><br><span class="line">      const scrollDistance = this.scrollHeight - this.scrollTop - this.clientHeight</span><br><span class="line">      <span class="keyword">if</span> (scrollDistance &lt;= sign &amp;&amp; down) &#123;</span><br><span class="line">        binding.value()</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>在组件中，使用自定义的事件：<br>v-loadmore=”loadMore”<br>在methods中调用loadMore<br>这样就实现啦！！！</p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+        <tag>element</tag>
+        <tag>table</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>sortable+element实现表格行拖拽</title>
+    <url>/2020/04/07/PY.html/</url>
+    <content><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install vuedraggable</span><br></pre></td></tr></table></figure>
+<h3 id="引入"><a href="#引入" class="headerlink" title="引入"></a>引入</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import Sortable from <span class="string">'sortablejs'</span></span><br></pre></td></tr></table></figure>
+<h3 id="el-table-添加row-key属性"><a href="#el-table-添加row-key属性" class="headerlink" title="el-table 添加row-key属性"></a>el-table 添加row-key属性</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;el-table</span><br><span class="line">  ref=<span class="string">"filterTable"</span></span><br><span class="line">  row-key=<span class="string">"ip"</span> </span><br><span class="line">  @filter-change=<span class="string">"handlerFilterChange"</span> </span><br><span class="line">  class=<span class="string">"cl-table"</span> </span><br><span class="line">  :data=<span class="string">"resourceList"</span> </span><br><span class="line">  v-loading=<span class="string">"resourceListLoading"</span> </span><br><span class="line">  stripe</span><br><span class="line">  style=<span class="string">"width:100%;"</span>&gt;</span><br><span class="line">  &lt;el-table-column</span><br><span class="line">    prop=<span class="string">"name"</span></span><br><span class="line">    label=<span class="string">"主机名"</span> </span><br><span class="line">    :min-width=<span class="string">"150"</span> </span><br><span class="line">    show-overflow-tooltip&gt;</span><br><span class="line">  &lt;/el-table-column&gt;</span><br><span class="line">&lt;/el-table&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="将拖拽元素设置为要拖动项的父级元素"><a href="#将拖拽元素设置为要拖动项的父级元素" class="headerlink" title="将拖拽元素设置为要拖动项的父级元素"></a>将拖拽元素设置为要拖动项的父级元素</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">mounted</span></span>() &#123;</span><br><span class="line">  // 表格中需要实现行拖动，所以选中tr的父级元素</span><br><span class="line">  const table = document.querySelector(<span class="string">'.el-table__body-wrapper tbody'</span>)</span><br><span class="line">  const self = this</span><br><span class="line">  Sortable.create(table, &#123;</span><br><span class="line">    onEnd(&#123; newIndex, oldIndex &#125;) &#123;</span><br><span class="line">      console.log(newIndex, oldIndex)</span><br><span class="line">      const targetRow = self.resourceList.splice(oldIndex, 1)[0]</span><br><span class="line">      self.resourceList.splice(newIndex, 0, targetRow)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+        <tag>element</tag>
+        <tag>sortable</tag>
+        <tag>表格拖拽</tag>
       </tags>
   </entry>
 </search>
